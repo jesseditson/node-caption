@@ -1,0 +1,25 @@
+{
+  "name": "caption",
+  "version": "0.0.1",
+  "description": "A captioned image generator for node.js, using imagemagick libraries.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jesseditson/node-caption.git"
+  },
+  "keywords": [
+    "caption",
+    "image",
+    "imagemagick",
+    "meme",
+    "pictures"
+  ],
+  "author": "Jesse Ditson <jesse.ditson@gmail.com>",
+  "license": "BSD",
+  "dependencies": {
+    "imagemagick": "~0.1.3"
+  },
+  "bin": {
+    "caption": "./lib/cli.js"
+  }
+}
