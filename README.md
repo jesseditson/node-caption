@@ -6,11 +6,14 @@ Node utility for captioning images via imageMagick
 To use node-caption, the system it's running on must have imageMagick installed. Here are some ways to do that:
 
   OSX: `brew install imagemagick`
+  
   Ubuntu: `apt-get install imagemagick`
+  
   RedHat and other yummy systems `yum install imagemagick`
 
-additionally, you can install it from a binary, as described here (http://www.imagemagick.org/script/binary-releases.php)[http://www.imagemagick.org/script/binary-releases.php]
-or build from source: (http://www.imagemagick.org/script/install-source.php)[http://www.imagemagick.org/script/install-source.php]
+additionally, you can install it from a binary, as described here [http://www.imagemagick.org/script/binary-releases.php](http://www.imagemagick.org/script/binary-releases.php)
+
+or build from source: [http://www.imagemagick.org/script/install-source.php](http://www.imagemagick.org/script/install-source.php)
 
 ##### Usage:
 
@@ -75,7 +78,7 @@ To specify a minimum height or width from the command line, you can set the `CAP
       // do stuff
     })
 
-![I AM THE LAW](http://tinypic.com/r/2ylpx6d/6)
+![I AM THE LAW](http://oi46.tinypic.com/2ylpx6d.jpg)
 
     caption http://i.imgur.com/AtLeN.png "You are mistaken." "This is my bowl." cat.jpg
 
@@ -89,7 +92,7 @@ To specify a minimum height or width from the command line, you can set the `CAP
       // do stuff
     })
 
-![This is my bowl.](http://tinypic.com/r/2vltytk/6)
+![This is my bowl.](http://oi47.tinypic.com/2vltytk.jpg)
 
 ##### Notes
 
@@ -97,8 +100,8 @@ Currently caption always uses white text with a 2px black stroke. It will automa
 
 In the future, I may add support for specifying certain imagemagick options for more versatility.
 
-If you find issues, please let me know! The preferred method is to use the (github issue tracker)[https://github.com/jesseditson/node-caption/issues]
+If you find issues, please let me know! The preferred method is to use the [github issue tracker](https://github.com/jesseditson/node-caption/issues)
 
-Credit to (Zach Holman's Fuck Yeah)[https://github.com/holman/fuck-yeah] for inspiration.
+Credit to [Zach Holman's Fuck Yeah](https://github.com/holman/fuck-yeah) for inspiration.
 
-Feel free to talk to me on (Twitter - @jesseditson)[https://www.twitter.com/jesseditson]
+Feel free to talk to me on [Twitter - @jesseditson](https://www.twitter.com/jesseditson)
