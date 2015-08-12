@@ -1,6 +1,6 @@
 {
   "name": "caption",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A captioned image generator for node.js, using imagemagick libraries.",
   "main": "index.js",
   "scripts": {
