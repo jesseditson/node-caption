@@ -3,13 +3,13 @@ node-caption
 
 Node utility for captioning images via imageMagick
 
-To use node-caption, the system it's running on must have imageMagick installed. Here are some ways to do that:
+To use node-caption, the system it's running on must have imageMagick (and ghostscript) installed. Here are some ways to do that:
 
-  OSX: `brew install imagemagick`
-  
-  Ubuntu: `apt-get install imagemagick`
-  
-  RedHat and other yummy systems `yum install imagemagick`
+  OSX: `brew install imagemagick ghostscript`
+
+  Ubuntu: `apt-get install imagemagick ghostscript`
+
+  RedHat and other yummy systems `yum install imagemagick ghostscript`
 
 additionally, you can install it from a binary, as described here [http://www.imagemagick.org/script/binary-releases.php](http://www.imagemagick.org/script/binary-releases.php)
 
@@ -32,7 +32,7 @@ To caption an existing image file, do this:
 
 To download the image first, use `caption.url`:
 
-    caption.path("http://www.someImageHost.com/path/to/image.jpg",options,function(err,captionedImage){
+    caption.url("http://www.someImageHost.com/path/to/image.jpg",options,function(err,captionedImage){
       // err will contain an Error object if there was an error
       // otherwise, captionedImage will be a path to a file.
     })
@@ -55,7 +55,7 @@ First, install caption:
 
 then you can start generating images to your hearts content. Calling caption with no arguments will output the usage options:
 
-    Usage: 
+    Usage:
     For a caption on the bottom of the image:
       caption <path to image or image url> "caption text" [ouput file]
     For top and bottom captions (meme style):
@@ -83,7 +83,7 @@ To specify a minimum height or width from the command line, you can set the `CAP
     caption http://i.imgur.com/AtLeN.png "You are mistaken." "This is my bowl." cat.jpg
 
   or
-  
+
     caption.url("http://i.imgur.com/AtLeN.png",{
       caption : "You are mistaken.",
       bottomCaption : "This is my bowl.",

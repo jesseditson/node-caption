@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "A captioned image generator for node.js, using imagemagick libraries.",
   "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive test"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/jesseditson/node-caption.git"
@@ -17,9 +20,13 @@
   "author": "Jesse Ditson <jesse.ditson@gmail.com>",
   "license": "BSD",
   "dependencies": {
+    "debug": "^2.2.0",
     "imagemagick": "~0.1.3"
   },
   "bin": {
     "caption": "./lib/cli.js"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
   }
 }
