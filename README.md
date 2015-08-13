@@ -57,10 +57,19 @@ then you can start generating images to your hearts content. Calling caption wit
 
     Usage:
     For a caption on the bottom of the image:
-      caption <path to image or image url> "caption text" [ouput file]
+      caption <path to image or image url> -c "caption text" -o [ouput file]
     For top and bottom captions (meme style):
-      caption <path to image or image url> "top caption" "bottom caption" [ouput file]
+      caption <path to image or image url> --top-caption "top caption" --bottom-caption "bottom caption" --output [ouput file]
 
+The available options are:
+
+  `-c` / `--caption` / `-b` / `--bottom-caption` : caption text to put at the bottom of the image.
+
+  `-t` / `--top` : caption text to put at the top of the image. May not be used with out a bottom caption.
+
+  `-o` / `--output` : output file to render the image to.
+
+The first argument is the path or URL to an image.
 You can use a url or a path, caption will try to download the url if it doesn't exist on your local fs.
 
 To specify a minimum height or width from the command line, you can set the `CAPTION_MIN_WIDTH` and `CAPTION_MIN_HEIGHT` environment variables.
