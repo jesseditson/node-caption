@@ -76,7 +76,7 @@ To specify a minimum height or width from the command line, you can set the `CAP
 
 ##### Examples:
 
-    caption http://simonbisleygallery.com/art/biz00157.jpg "I AM THE LAW" dredd.jpg
+    caption http://simonbisleygallery.com/art/biz00157.jpg -c "I AM THE LAW" -o dredd.jpg
 
   or
 
@@ -89,7 +89,7 @@ To specify a minimum height or width from the command line, you can set the `CAP
 
 ![I AM THE LAW](http://oi46.tinypic.com/2ylpx6d.jpg)
 
-    caption http://i.imgur.com/AtLeN.png "You are mistaken." "This is my bowl." cat.jpg
+    caption http://i.imgur.com/AtLeN.png -t "You are mistaken." -b "This is my bowl." -o cat.jpg
 
   or
 
